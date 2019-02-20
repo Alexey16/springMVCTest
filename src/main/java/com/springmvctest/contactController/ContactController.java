@@ -20,7 +20,7 @@ public class ContactController {
     private ContactService contactService;
 
     @Autowired
-    public void setContactService(@Qualifier("com/springmvctest/contactService") ContactService contactService) {
+    public void setContactService(@Qualifier("contactService") ContactService contactService) {
         this.contactService = contactService;
     }
 

@@ -6,6 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -19,6 +20,11 @@ public class Contact implements Serializable {
     private DateTime birthDate;
     private String description;
     private byte[] photo;
+
+    public Contact(String first_name, String last_name) {
+        this.firstName = first_name;
+        this.lastName = last_name;
+    }
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
