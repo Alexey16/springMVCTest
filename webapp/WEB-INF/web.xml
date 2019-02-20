@@ -9,11 +9,6 @@
         <param-value>/WEB-INF/spring/root-context.xml</param-value>
     </context-param>
 
-    <!--
-        CharacterEncodingFilter - указание кодировки в запросах
-        HttpMethodFilter - поддержка для HTTP методов отличнх от GET and POST
-        OpenEntityManagerInViewFilter - связывает сущности JPA (EntityManager) с потоком для полной обработки запросов
-    -->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -57,6 +52,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>appServlet</servlet-name>
-        <url-pattern></url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
