@@ -1,11 +1,9 @@
-package com.springmvctest.contactService;
+package com.springmvctest;
 
 import com.google.common.collect.Lists;
-import com.springmvctest.contacts.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-import com.springmvctest.repositories.ContactRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

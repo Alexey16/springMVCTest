@@ -1,7 +1,5 @@
-package com.springmvctest.contactController;
+package com.springmvctest;
 
-import com.springmvctest.contactService.ContactService;
-import com.springmvctest.contacts.Contact;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

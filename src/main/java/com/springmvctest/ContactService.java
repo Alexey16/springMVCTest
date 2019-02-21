@@ -1,6 +1,6 @@
-package com.springmvctest.contactService;
+package com.springmvctest;
 
-import com.springmvctest.contacts.Contact;
+import com.springmvctest.Contact;
 
 import java.util.List;
 
